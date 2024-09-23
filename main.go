@@ -36,6 +36,7 @@ type ServerProperties struct {
 	Seed             string
 	WhiteList        string
 	Hardcore         string
+	OnlineMode       string
 	Rcon             string
 	RconPassword     string
 	RconPort         string
@@ -44,12 +45,13 @@ type ServerProperties struct {
 
 func getEnvVars() ServerProperties {
 	return ServerProperties{
-	    Version:          os.Getenv("Version"),
+		Version:          os.Getenv("Version"),
 		MOTD:             os.Getenv("MOTD"),
 		Port:             os.Getenv("Port"),
 		Seed:             os.Getenv("Seed"),
 		WhiteList:        os.Getenv("WhiteList"),
 		Hardcore:         os.Getenv("Hardcore"),
+		OnlineMode:       os.Getenv("OnlineMode"),
 		Rcon:             os.Getenv("Rcon"),
 		RconPassword:     os.Getenv("RconPassword"),
 		RconPort:         os.Getenv("RconPort"),
@@ -62,6 +64,7 @@ server-port={{.Port}}
 level-seed={{.Seed}}
 white-list={{.WhiteList}}
 hardcore={{.Hardcore}}
+online-mode={{.OnlineMode}}
 enable-rcon={{.Rcon}}
 rcon.password={{.RconPassword}}
 rcon.port={{.RconPort}}
