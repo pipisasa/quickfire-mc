@@ -5,6 +5,7 @@
   "Seed": "Seed for the world",
   "WhiteList": "Whitelist the server",
   "Hardcore": "Hardcore mode",
+  "OnlineMode": "Online Mode"
   "Rcon": "Enable Rcon",
   "RconPassword": "Rcon password",
   "RconPort": "Rcon port",
